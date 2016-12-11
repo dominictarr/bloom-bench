@@ -11,6 +11,6 @@ module.exports = function (items, target_prob) {
 
   var HASH_ROUNDS = Math.round(Math.log(2.0) * BUFFER_LEN / items)
   return {
-    bytes: BUFFER_LEN, hashes: HASH_ROUNDS
+    bits: BUFFER_LEN, hashes: HASH_ROUNDS, bytes: BUFFER_LEN/8
   }
 }

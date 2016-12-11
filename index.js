@@ -85,7 +85,7 @@ var algs = {
     var BloomFilter = require('bloomxx').BloomFilter
     var options =
     {
-        bits: d.bytes,
+        bits: d.bits,
         hashes: d.hashes,
         seeds: [1, 2, 3, 4,5,6,7,8,9,10]
     };
