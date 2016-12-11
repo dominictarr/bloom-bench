@@ -1,0 +1,28 @@
+{
+  "name": "bloom-bench",
+  "description": "",
+  "version": "0.0.0",
+  "homepage": "https://github.com/dominictarr/bloom-bench",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dominictarr/bloom-bench.git"
+  },
+  "dependencies": {
+    "bloem": "^0.2.4",
+    "bloom-filter-cpp": "^1.1.6",
+    "bloom-filter-javascript": "^0.1.4",
+    "bloom-filter-js": "0.0.12",
+    "bloom-lite": "0.0.3",
+    "bloomfilter": "0.0.16",
+    "bloomfilter-filter": "^1.0.2",
+    "bloomxx": "0.0.5",
+    "ibf": "^4.0.1",
+    "jsbloom": "^1.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "set -e; for t in test/*.js; do node $t; done"
+  },
+  "author": "'Dominic Tarr' <dominic.tarr@gmail.com> (dominictarr.com)",
+  "license": "MIT"
+}
