@@ -28,8 +28,8 @@ bloom-filter-js, 16441, 16865, 16346
 bloomxx, 556, 564, 5372
 ```
 
-since `jsbloom` avoids compiling C++ and also is very fast, it's clearly the best choice.
-Also, with a small change 
+Since `jsbloom` avoids compiling C++ and also is very fast, it's clearly the best choice.
+Also, with a [small change](https://github.com/cry/jsbloom/pull/1) it becomes the fastest _hands down_.
 
 ## License
 
