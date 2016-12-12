@@ -31,6 +31,30 @@ bloomxx, 556, 564, 5372
 Since `jsbloom` avoids compiling C++ and also is very fast, it's clearly the best choice.
 Also, with a [small change](https://github.com/cry/jsbloom/pull/1) it becomes the fastest _hands down_.
 
+## other results
+
+learning more here, if you use a short string, it's a lot faster,
+here I altered the script slightly to use numbers instead of hashes.
+This shows that some implementations handle this situation better,
+and overall, ops/second are much higher, because it removes the time
+to perform sha256, and also because it's shorter string.
+
+```
+module-name, add, +test, -test
+jsbloom_notrycatch, 1818182, 1369863, 2857143
+jsbloom, 531915, 1315789, 1724138
+bloom-filter-cpp, 2127660, 2272727, 2222222
+bloomfilter, 444444, 406504, 438596
+bloom-lite, 105263, 194932, 155039
+bloem, 131926, 143266, 141243
+bloom-filter-js, 105042, 103950, 99602
+bloomxx, 580, 576, 5666
+```
+
+The performance of my `jsbloom` fork is moved significantly ahead of `jsbloom`,
+but has fallen behing `bloom-filter-cpp`.
+
 ## License
 
 MIT
+
